@@ -1,0 +1,14 @@
+.ul li *{
+    color: var(--silver);
+}
+.parent aside{
+    height: calc(100vh - 100px);
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.parent main{
+    flex: 9;
+}

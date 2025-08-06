@@ -1,0 +1,22 @@
+.ul {
+  counter-reset: item;
+}
+.ul li {
+  counter-increment: item;
+  display: flex;
+  align-items: center;
+}
+.ul li a::before {
+  content: "0" counter(item) ". ";
+  color: var(--green);
+}
+.ul li a{
+    font-size: 13px;
+    transition: 0.3s;
+    font-weight: bold;
+    color: var(--silver);
+    font-family: mono, 'Times New Roman', Times, serif;
+}
+.ul li a:hover{
+    color: var(--green);
+}

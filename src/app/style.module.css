@@ -1,0 +1,30 @@
+.hero p:first-child{
+    color: var(--green);
+    font-weight: bold;
+    font-family: mono, 'Times New Roman', Times, serif;
+}
+.hero h1{
+    font-size: 70px;
+    font-weight: bold;
+    color: var(--silver);
+    margin: -10px 0;
+}
+.hero h2{
+    font-weight: bold;
+    color: var(--slate);
+    font-size: 63px;
+}
+.hero{
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info{
+    font-weight: normal;
+    width: 50%;
+    color: var(--slate);
+}
+.hero button{
+    margin: 20px 0;
+}
