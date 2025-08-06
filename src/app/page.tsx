@@ -13,8 +13,8 @@ export default function Home() {
       <h1>Paurush Sinha</h1>
       <h2>I build things for web and mobiles.</h2>
       <p className={classes.info}>
-        I'm a software engineer specializing in building (and occasionally
-        designing) exceptional digital experiences. Currently, I'm focused on
+        I&apos;m a software engineer specializing in building (and occasionally
+        designing) exceptional digital experiences. Currently, I&apos;m focused on
         building accessible, human-centered products at Upstatement.
       </p>
       <Button label="Download my CV" />
