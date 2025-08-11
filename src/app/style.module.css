@@ -1,30 +1,65 @@
-.hero p:first-child{
-    color: var(--green);
-    font-weight: bold;
-    font-family: mono, 'Times New Roman', Times, serif;
+.hero p:first-child {
+  color: var(--green);
+  font-weight: bold;
+  font-family: mono, "Times New Roman", Times, serif;
 }
-.hero h1{
-    font-size: 70px;
-    font-weight: bold;
-    color: var(--silver);
-    margin: -10px 0;
+.hero h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: var(--silver);
+  margin: -10px 0;
 }
-.hero h2{
-    font-weight: bold;
-    color: var(--slate);
-    font-size: 63px;
+.hero h2 {
+  font-weight: bold;
+  color: var(--slate);
+  font-size: 63px;
 }
-.hero{
-    height: calc(100vh - 100px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.hero {
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.info{
-    font-weight: normal;
-    width: 50%;
-    color: var(--slate);
+.info {
+  font-weight: normal;
+  width: 50%;
+  color: var(--slate);
 }
-.hero button{
-    margin: 20px 0;
+.hero button {
+  margin: 20px 0;
+}
+.content {
+  counter-reset: heading-counter;
+}
+.content h2::before {
+  content: "0" counter(heading-counter) ". ";
+  counter-increment: heading-counter;
+}
+
+.content h2 {
+  font-weight: bold;
+  font-size: 13px;
+  font-size: 32px;
+  font-family: sans-serif;
+  color: var(--silver);
+}
+.content h2::before {
+  font-family: mono;
+  color: var(--green);
+  font-size: 22px;
+}
+.content h2::after {
+  content: "";
+  display: inline-block;
+  width: 30%;
+  height: 2px;
+  background-color: #3a3c41;
+  margin-left: 10px;
+}
+.content h2 {
+  display: flex;
+  align-items: center;
+}
+.content > div{
+  min-height: 100vh;
 }

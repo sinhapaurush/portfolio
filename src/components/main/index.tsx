@@ -10,7 +10,9 @@ export default function Main({
 }) {
   return (
     <div className={`flex ${classes.parent}`}>
-      <aside className={`flex flex-col justify-end h-full ${classes.aside}`}>
+      <aside
+        className={`flex flex-col justify-end h-full ${classes.aside} ${classes.social}`}
+      >
         <ul>
           <li>
             <FaGithub />
@@ -25,12 +27,14 @@ export default function Main({
             <FaEnvelope />
           </li>
         </ul>
+        <hr />
       </aside>
       <main>{children}</main>
-      <aside>
-        <div>
-            <Link href="">sinhapaurush444@gmail.com</Link>
+      <aside className={classes.right}>
+        <div className={classes.mail}>
+          <Link href="">sinhapaurush444@gmail.com</Link>
         </div>
+        <hr />
       </aside>
     </div>
   );

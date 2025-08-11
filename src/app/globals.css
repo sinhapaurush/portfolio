@@ -6,6 +6,7 @@
   --green: #64ffda;
   --slate: #8892b0;
   --silver: #ccd6f6;
+  --white: #ffffff;
 }
 
 @theme inline {
@@ -21,13 +22,17 @@
     --foreground: #ededed;
   }
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: plain, Helvetica, sans-serif;
+  /* font-family: plain, Helvetica, sans-serif; */
 }
-button{
+button {
   padding: 12px 16px;
   background-color: transparent;
   color: var(--green);
@@ -36,5 +41,8 @@ button{
   cursor: pointer;
   font-size: 13px;
   width: max-content;
-  font-family: mono, 'Times New Roman', Times, serif;
+  font-family: mono, "Times New Roman", Times, serif;
+}
+a{
+  color: var(--green);
 }

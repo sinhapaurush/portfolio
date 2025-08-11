@@ -1,14 +1,64 @@
-.ul li *{
-    color: var(--silver);
+.ul li * {
+  color: var(--silver);
 }
-.parent aside{
-    height: calc(100vh - 100px);
-    position: relative;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+.parent aside {
+  height: calc(100vh - 100px);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 50px;
 }
-.parent main{
-    flex: 9;
+.parent main {
+  flex: 8;
+  margin: 0 10vw;
+}
+.parent aside {
+  position: fixed;
+  width: 8vw;
+  display: flex;
+}
+.aside {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+.social ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30;
+}
+.social li > * {
+  font-size: 20px;
+  color: var(--slate);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.social li > *:hover {
+  color: var(--green);
+  transform: translateY(-5px);
+}
+.social hr,
+.right hr {
+  transform: rotate(90deg);
+  border-color: white;
+  width: 100px;
+  margin-top: 80px;
+}
+.right div {
+  transform: rotate(90deg);
+}
+.right hr {
+  margin-top: 150px;
+}
+.right div a {
+  color: var(--slate);
+  font-family: mono;
+  font-size: 13px;
+  transition: 0.3s;
+}
+.right div a:hover {
+  color: var(--green);
 }
