@@ -1,0 +1,7 @@
+.chip{
+    font-family: mono;
+    color: var(--slate);
+    font-size: 14px;
+    padding: 3px 10px;
+    padding-left: 0;
+}

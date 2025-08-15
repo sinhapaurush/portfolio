@@ -1,0 +1,38 @@
+.card {
+  background-color: var(--blue);
+  padding: 25px;
+  transition: 0.2s;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.card svg {
+  color: var(--green);
+  font-size: 10px;
+}
+.card > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card h3 {
+  font-weight: bold;
+  font-size: 19px;
+  font-family: plain;
+  color: var(--green);
+}
+.card p {
+  font-family: plain;
+}
+.icons {
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.icons > *:nth-child(2) {
+  color: var(--slate);
+  font-size: 25px;
+}
+.card > div:last-child{
+    padding-top: 20px;
+}
+.card:hover{
+    transform: translateY(-5px);
+}

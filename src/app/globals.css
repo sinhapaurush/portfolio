@@ -7,6 +7,7 @@
   --slate: #8892b0;
   --silver: #ccd6f6;
   --white: #ffffff;
+  --blue: #233554;
 }
 
 @theme inline {
@@ -22,9 +23,7 @@
     --foreground: #ededed;
   }
 }
-*{
-  margin: 0;
-  padding: 0;
+* {
   font-family: sans-serif;
 }
 body {
@@ -43,6 +42,6 @@ button {
   width: max-content;
   font-family: mono, "Times New Roman", Times, serif;
 }
-a{
+a {
   color: var(--green);
 }

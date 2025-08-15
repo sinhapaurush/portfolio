@@ -1,0 +1,14 @@
+.section h4{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.section p{
+    line-height: 27px;
+    margin: 20px 0;
+    width: 80%;
+    text-align: center;
+    color: var(--slate);
+    font-family: plain;
+}

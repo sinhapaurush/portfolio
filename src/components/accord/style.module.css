@@ -1,0 +1,40 @@
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--silver);
+  font-family: plain;
+}
+.title span {
+  color: var(--green);
+  font-family: plain;
+}
+.buttonList li {
+  font-family: mono;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 10px;
+  border-left: 2px solid var(--slate);
+  color: var(--slate);
+}
+.period {
+  font-family: mono;
+  color: var(--slate);
+}
+.active {
+  border-left-color: var(--green)!important;
+  color: var(--green)!important;
+}
+.pointers li {
+  margin: 15px 0;
+  color: var(--slate);
+  font-family: plain;
+}
+.pointers li::before {
+  content: "▹";
+  color: var(--green);
+  padding-right: 0.5em;
+  list-style-position: outside;
+}
+.pointers {
+  margin: 25px 0;
+}

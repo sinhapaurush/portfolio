@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${mono.className} antialiased`}>
+      <body className={`${mono.className} ${plain.className} antialiased`}>
         <Header />
         <Main>{children}</Main>
       </body>
