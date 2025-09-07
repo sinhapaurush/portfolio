@@ -39,6 +39,7 @@ export default function Home() {
                   <AccordChild
                     organisation="Bisht Enterprises"
                     period="July 2025 - October 2025"
+                    key={1}
                     points={[
                       "Worked with Next.js to develop and optimize responsive web applications, ensuring seamless user experiences across devices.",
                       "Built and maintained cross-platform mobile applications using React Native, improving performance and user engagement.",

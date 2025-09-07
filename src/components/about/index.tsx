@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import classes from "./style.module.css";
 import Heading from "../heading";
-import Link from "next/link";
 
 export default function AboutMe() {
   return (
