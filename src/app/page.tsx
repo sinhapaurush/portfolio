@@ -26,7 +26,7 @@ export default function Home() {
           I&apos;m focused on building accessible, human-centered products at
           Upstatement.
         </p>
-        <Button label="Download my CV" />
+        <Button label="Download my CV" href="/cv.pdf" download />
       </div>
       <section className={classes.content}>
         <AboutMe />

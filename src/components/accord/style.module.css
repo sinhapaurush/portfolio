@@ -18,11 +18,12 @@
 }
 .period {
   font-family: mono;
-  color: var(--slate);
+  color: var(--lightslate);
+  font-size: 14px;
 }
 .active {
-  border-left-color: var(--green)!important;
-  color: var(--green)!important;
+  border-left-color: var(--green) !important;
+  color: var(--green) !important;
 }
 .pointers li {
   margin: 15px 0;
@@ -37,4 +38,34 @@
 }
 .pointers {
   margin: 25px 0;
+}
+.fadeout {
+  animation-name: fadeoutanimation;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.fadein {
+  animation-name: fadeinanimation;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeoutanimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeinanimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

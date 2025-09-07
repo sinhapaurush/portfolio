@@ -1,5 +1,11 @@
 "use client";
-import React, { ReactElement, useCallback, useState } from "react";
+import React, {
+  ReactElement,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import classes from "./style.module.css";
 
 export function AccordChild({
@@ -36,22 +42,31 @@ export default function Accord({
   children: ReactElement<typeof AccordChild>[];
 }) {
   const [chosenIndex, setChosenIndex] = useState<number>(0);
+  const contentBox = useRef<HTMLDivElement | null>(null);
   const childrenArray = React.Children.toArray(children) as ReactElement<
     React.ComponentProps<typeof AccordChild>
   >[];
 
   const navigateAccord = useCallback((targetIndex: number) => {
-    setChosenIndex(targetIndex);
+    contentBox.current!.classList.add(classes.fadeout);
+    setTimeout(() => {
+      setChosenIndex(targetIndex);
+      contentBox.current!.classList.remove(classes.fadeout);
+      contentBox.current!.classList.add(classes.fadein);
+    }, 150);
+    contentBox.current!.classList.remove(classes.fadein);
   }, []);
 
   return (
-    <div className="flex gap-3">
+    <div className="md:flex flex-col gap-3">
       <div className="flex-1">
         <ul className={classes.buttonList}>
           {childrenArray.map(({ props: { organisation } }, index) => (
             <li
               key={index}
-              className={`p-2${index === chosenIndex ? ` ${classes.active}` : ""}`}
+              className={`p-2${
+                index === chosenIndex ? ` ${classes.active}` : ""
+              }`}
               onClick={() => navigateAccord(index)}
             >
               {organisation}
@@ -59,7 +74,9 @@ export default function Accord({
           ))}
         </ul>
       </div>
-      <div className="flex-4">{childrenArray[chosenIndex]}</div>
+      <div className="flex-4" ref={contentBox}>
+        {childrenArray[chosenIndex]}
+      </div>
     </div>
   );
 }

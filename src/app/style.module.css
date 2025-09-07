@@ -5,6 +5,7 @@
 }
 .hero h1 {
   font-size: 70px;
+  /* font-size: clamp(35px, 45px, 70px); */
   font-weight: bold;
   color: var(--silver);
   margin: -10px 0;
@@ -13,6 +14,7 @@
   font-weight: bold;
   color: var(--slate);
   font-size: 63px;
+  /* font-size:  clamp(28px, 38px, 63px); */
 }
 .hero {
   height: calc(100vh - 100px);
@@ -91,4 +93,15 @@
 }
 .footer a{
   font-size: 12px;
+}
+@media screen and (max-width: 800px){
+  .hero h1{
+    font-size: 45px;
+  }
+  .hero h2{
+    font-size: 38px;
+  }
+  .info{
+    width: unset;
+  }
 }
