@@ -69,3 +69,16 @@
     opacity: 1;
   }
 }
+.accorprnt{
+  display: flex;
+  flex-direction: row;
+  gap: 3;
+}
+@media screen and (max-width: 790px) {
+  .btnBox {
+    margin-bottom: 30px;
+  }
+  .accorprnt{
+    flex-direction: column;
+  }
+}

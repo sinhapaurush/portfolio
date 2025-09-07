@@ -67,4 +67,7 @@
   .parent aside{
     display: none;
   }
+  .parent main{
+    margin: 0 35px;
+  }
 }

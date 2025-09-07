@@ -28,16 +28,16 @@ export default function Header() {
       <div>
         <ul className={`flex gap-6 ${classes.ul}`}>
           <li>
-            <Link href="">About</Link>
+            <Link href="#about">About</Link>
           </li>
           <li>
-            <Link href="">Experience</Link>
+            <Link href="#experience">Experience</Link>
           </li>
           <li>
-            <Link href="">Work</Link>
+            <Link href="#projects">Projects</Link>
           </li>
           <li>
-            <Link href="">Contact</Link>
+            <Link href="#contact">Contact</Link>
           </li>
           <li>
             <button>Resume</button>

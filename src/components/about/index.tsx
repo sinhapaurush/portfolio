@@ -6,28 +6,27 @@ import Link from "next/link";
 
 export default function AboutMe() {
   return (
-    <div className={classes.main}>
+    <div className={classes.main} id="about">
       <Heading>About Me</Heading>
       <div>
         <div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, quasi
-            ipsam magni soluta asperiores temporibus, hic dolorem aliquid
-            doloribus qui sint quos suscipit vero nesciunt voluptatum nihil
-            tenetur. Dolores, accusamus?
+            I&apos;ve been coding since 2019 and have developed a passion for
+            building robust and efficient applications. Starting with small
+            projects, I quickly grew my skills by experimenting with different
+            frameworks and technologies.
           </p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
-            repellendus error eligendi <Link href="">consequuntur culpa</Link>?
-            Molestias, suscipit saepe? Ducimus commodi dignissimos, officia
-            pariatur quia deleniti, in facere exercitationem temporibus alias
-            aspernatur.
+            Over the years, I&apos;ve gained hands-on experience with Next.js, React,
+            Flutter, PHP, WordPress, ExpressJS, and many other tools. This
+            exposure has helped me understand how to create scalable and
+            user-friendly solutions for a wide range of projects.
           </p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
-            repellendus error eligendi consequuntur culpa? Molestias, suscipit
-            saepe? Ducimus commodi dignissimos, officia pariatur quia deleniti,
-            in facere exercitationem temporibus alias aspernatur.
+            I enjoy learning new technologies and applying them to solve
+            real-world problems. Being adaptable and open to challenges has
+            allowed me to contribute effectively to projects while continuously
+            improving my coding expertise.
           </p>
         </div>
         <div>

@@ -9,6 +9,10 @@
   color: var(--green);
   font-size: 10px;
 }
+.span {
+  color: white;
+  font-weight: normal;
+}
 .card > div {
   display: flex;
   flex-wrap: wrap;
@@ -30,9 +34,9 @@
   color: var(--slate);
   font-size: 25px;
 }
-.card > div:last-child{
-    padding-top: 20px;
+.card > div:last-child {
+  padding-top: 20px;
 }
-.card:hover{
-    transform: translateY(-5px);
+.card:hover {
+  transform: translateY(-5px);
 }

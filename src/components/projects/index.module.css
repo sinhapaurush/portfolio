@@ -1,6 +1,16 @@
-.main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    padding: 30px 0;
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 30px 0;
+}
+@media screen and (max-width: 780px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
 }

@@ -62,21 +62,23 @@
   align-items: center;
 }
 
-@media screen and (max-width:910px){
-  .main > div > div:nth-child(2) > div::before{
+@media screen and (max-width: 910px) {
+  .main > div > div:nth-child(2) > div::before {
     display: none;
   }
-  .main > div > div:nth-child(2) > div::after{
+  .main > div > div:nth-child(2) > div::after {
     display: none;
   }
-  .main >div{
+  .main > div {
     flex-direction: column-reverse;
   }
-   .main > div > div:nth-child(2){
+  .main > div > div:nth-child(2) {
     margin: 30px 0;
-   }
+  }
 }
 
 @media screen and (max-width: 770px) {
+  .main {
+    padding: 0;
+  }
 }
-

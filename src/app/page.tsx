@@ -21,78 +21,78 @@ export default function Home() {
         <h1>Paurush Sinha</h1>
         <h2>I build things for web and mobiles.</h2>
         <p className={classes.info}>
-          I&apos;m a software engineer specializing in building (and
-          occasionally designing) exceptional digital experiences. Currently,
-          I&apos;m focused on building accessible, human-centered products at
-          Upstatement.
+          I&apos;m working as an App Development Intern at Bisht Enterprises,
+          where I&apos;m building user-friendly and efficient mobile
+          applications while expanding my technical skills and contributing to
+          real-world projects.
         </p>
         <Button label="Download my CV" href="/cv.pdf" download />
       </div>
       <section className={classes.content}>
         <AboutMe />
         <div>
-          <div className={classes.accordWrapper}>
+          <div className={classes.accordWrapper} id="experience">
             <div>
               <h2 className="mb-15">Where I&apos;ve worked</h2>
               <Accord>
-                <AccordChild
-                  organisation="Bisht Enterprises"
-                  period="July 2025 - October 2025"
-                  points={[
-                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nisi repellendus, vel delectus alias ducimus maiores quia quisquam aliquid molestiae dignissimos aspernatur error consequatur amet atque? Veniam aut suscipit doloribus.",
-                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nisi repellendus, vel delectus alias ducimus maiores quia quisquam aliquid molestiae dignissimos aspernatur error consequatur amet atque? Veniam aut suscipit doloribus.",
-                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nisi repellendus, vel delectus alias ducimus maiores quia quisquam aliquid molestiae dignissimos aspernatur error consequatur amet atque? Veniam aut suscipit doloribus.",
-                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nisi repellendus, vel delectus alias ducimus maiores quia quisquam aliquid molestiae dignissimos aspernatur error consequatur amet atque? Veniam aut suscipit doloribus.",
-                  ]}
-                  title="Full Stack Developer"
-                />
-                <AccordChild
-                  organisation="TCS"
-                  period="July 2025 - October 2025"
-                  points={[
-                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nisi repellendus, vel delectus alias ducimus maiores quia quisquam aliquid molestiae dignissimos aspernatur error consequatur amet atque? Veniam aut suscipit doloribus.",
-                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nisi repellendus, vel delectus alias ducimus maiores quia quisquam aliquid molestiae dignissimos aspernatur error consequatur amet atque? Veniam aut suscipit doloribus.",
-                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nisi repellendus, vel delectus alias ducimus maiores quia quisquam aliquid molestiae dignissimos aspernatur error consequatur amet atque? Veniam aut suscipit doloribus.",
-                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nisi repellendus, vel delectus alias ducimus maiores quia quisquam aliquid molestiae dignissimos aspernatur error consequatur amet atque? Veniam aut suscipit doloribus.",
-                  ]}
-                  title="Full Stack Developer"
-                />
-                <AccordChild
-                  organisation="Infosys"
-                  period="July 2025 - October 2025"
-                  points={[
-                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nisi repellendus, vel delectus alias ducimus maiores quia quisquam aliquid molestiae dignissimos aspernatur error consequatur amet atque? Veniam aut suscipit doloribus.",
-                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nisi repellendus, vel delectus alias ducimus maiores quia quisquam aliquid molestiae dignissimos aspernatur error consequatur amet atque? Veniam aut suscipit doloribus.",
-                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nisi repellendus, vel delectus alias ducimus maiores quia quisquam aliquid molestiae dignissimos aspernatur error consequatur amet atque? Veniam aut suscipit doloribus.",
-                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nisi repellendus, vel delectus alias ducimus maiores quia quisquam aliquid molestiae dignissimos aspernatur error consequatur amet atque? Veniam aut suscipit doloribus.",
-                  ]}
-                  title="Full Stack Developer"
-                />
+                {[
+                  <AccordChild
+                    organisation="Bisht Enterprises"
+                    period="July 2025 - October 2025"
+                    points={[
+                      "Worked with Next.js to develop and optimize responsive web applications, ensuring seamless user experiences across devices.",
+                      "Built and maintained cross-platform mobile applications using React Native, improving performance and user engagement.",
+                      "Collaborated with the development team to implement new features, debug issues, and enhance application functionality using modern JavaScript frameworks.",
+                    ]}
+                    title="Full Stack Developer"
+                  />,
+                ]}
               </Accord>
             </div>
           </div>
         </div>
-        <div>
+        <div id="projects">
           <h2>Some things I&apos;ve built</h2>
           <ProjectSection>
-            <ProjectCard tech={[Technology.JS, Technology.Next]} />
-            <ProjectCard tech={[Technology.JS, Technology.Next]} />
             <ProjectCard
-              tech={[
-                Technology.JS,
-                Technology.Next,
-                Technology.CPP,
-                Technology.Flutter,
-                Technology.Python,
-                Technology.ReactNative,
-              ]}
+              tech={[Technology.JS, Technology.PHP, Technology.ReactNative]}
+              name="Pranah App"
+              about="A Social Media app like Instagram"
+              href="https://github.com/sinhapaurush/pranahworld"
             />
-            <ProjectCard tech={[Technology.JS, Technology.Next]} />
-            <ProjectCard tech={[Technology.JS, Technology.Next]} />
-            <ProjectCard tech={[Technology.JS, Technology.Next]} />
+            <ProjectCard
+              name="Vakyavahan"
+              about="A service that allows to send SMS from your phone using an API"
+              tech={[Technology.JS, Technology.Flutter]}
+              href="https://github.com/sinhapaurush/vakyavahan_client"
+            />
+            <ProjectCard
+              name="React Native YouTube Player"
+              about="A library that allows embedding YouTube videos in React Native with custom controls and modifications"
+              tech={[Technology.JS, Technology.ReactNative]}
+              href="https://www.npmjs.com/package/rn-yt-player"
+            />
+            <ProjectCard
+              name="FlexFind"
+              about="Search Engine built in PHP"
+              tech={[Technology.PHP]}
+              href="https://github.com/sinhapaurush/flexfind"
+            />
+            <ProjectCard
+              name="sinha-crawl"
+              about="A crawler built in NodeJS to crawl the web for FlexFind search engine"
+              tech={[Technology.JS]}
+              href="https://github.com/sinhapaurush/sinha-crawler"
+            />
+            <ProjectCard
+              name="Yugal"
+              about="A framework for PHP that allows development of SSG SPA"
+              tech={[Technology.JS, Technology.PHP]}
+              href="https://yugalphp.gitbook.io/"
+            />
           </ProjectSection>
         </div>
-        <div className="flex justify-center flex-col">
+        <div className="flex justify-center flex-col" id="contact">
           <h3 className={classes.specialHeading}>What&apos;s Next?</h3>
           <GetInToch />
         </div>

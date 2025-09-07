@@ -17,6 +17,7 @@ export default function Button({
       href={href}
       target={newTab ? "_blank" : undefined}
       download={download}
+      className="w-fit"
     >
       <button>{label}</button>
     </Link>

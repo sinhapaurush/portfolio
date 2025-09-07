@@ -58,8 +58,8 @@ export default function Accord({
   }, []);
 
   return (
-    <div className="md:flex flex-col gap-3">
-      <div className="flex-1">
+    <div className={classes.accorprnt}>
+      <div className={`flex-1 ${classes.btnBox}`}>
         <ul className={classes.buttonList}>
           {childrenArray.map(({ props: { organisation } }, index) => (
             <li

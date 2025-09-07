@@ -10,19 +10,17 @@ export default function GetInToch() {
       <div className="w-[80%] flex flex-col items-center">
         <h4>Get in Touch</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea minima
-          facilis quam! Consectetur voluptatem blanditiis, illo, vitae ullam
-          quod possimus, perspiciatis eos iusto sint asperiores quaerat
-          excepturi! Excepturi, magni aspernatur?
+          I&apos;m always open to new opportunities and excited to work on projects
+          that challenge me and help me grow. Whether it&apos;s a startup, a creative
+          team, or a large organization, I&apos;m ready to contribute and learn.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea minima
-          facilis quam! Consectetur voluptatem blanditiis, illo, vitae ullam
-          quod possimus, perspiciatis eos iusto sint asperiores quaerat
-          excepturi! Excepturi, magni aspernatur?
+          Feel free to reach out if you have a role or project where I can add
+          value. I&apos;m eager to collaborate, take on new challenges, and be a part
+          of something meaningful.
         </p>
         <div className="flex justify-center">
-          <Button label="Say Hello" />
+          <Button label="Say Hello" href="mailto:sinhapaurush444@gmail.com" />
         </div>
       </div>
     </div>

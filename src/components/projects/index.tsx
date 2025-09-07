@@ -11,7 +11,10 @@ export default function ProjectSection({
     <>
       <div className={style.main}>{children}</div>
       <div className="flex justify-center">
-        <Button label="Show More" />
+        <Button
+          label="Show More"
+          href="https://github.com/sinhapaurush?tab=repositories"
+        />
       </div>
     </>
   );
